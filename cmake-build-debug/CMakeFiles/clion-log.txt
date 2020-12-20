@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug
