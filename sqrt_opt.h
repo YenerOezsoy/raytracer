@@ -7,12 +7,26 @@ typedef int v4si __attribute__ ((vector_size (16)));
 
 template <size_t LOOPS = 2>
 float sqrt1(float * a) {
-  float root;
-  // from here
-  root = 0; // to avoid a warning, delete this in your code
-  // TODO: your code
-  // to here
-  return root;
+    float root;
+    // from here
+    root = 1;
+    float *ap = a;
+    float *rp = &root;
+
+    int *ai = reinterpret_cast<int *>(ap);
+    int *initial = reinterpret_cast<int *>(rp);
+    *initial= (1<<29)+(*ai>>1)-(1<<22)-0x4C000;
+
+    float *x0 = reinterpret_cast<float *>(initial);
+
+    root = *x0;
+
+    for (int i = 0; i < LOOPS; i++) {
+        root = 0.5 * (root + (*a / root));
+    }
+
+    // to here
+    return root;
 }
 
 template <size_t LOOPS = 2>
