@@ -6,7 +6,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="027e4c2e-5686-4255-84d1-2cfb25d57d04" name="Default Changelist" comment="" />
+    <list default="true" id="027e4c2e-5686-4255-84d1-2cfb25d57d04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/triangle.tcc" beforeDir="false" afterPath="$PROJECT_DIR$/triangle.tcc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608428237603</updated>
-      <workItem from="1608428238873" duration="430000" />
+      <workItem from="1608428238873" duration="547000" />
     </task>
     <servers />
   </component>
