@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer"
+CMAKE_SOURCE_DIR = /Users/yeneroezsoy/CLionProjects/raytracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raytracer.dir/depend.make
@@ -79,42 +79,42 @@ include CMakeFiles/raytracer.dir/flags.make
 
 CMakeFiles/raytracer.dir/kdtree.cc.o: CMakeFiles/raytracer.dir/flags.make
 CMakeFiles/raytracer.dir/kdtree.cc.o: ../kdtree.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/kdtree.cc.o"
-	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/kdtree.cc.o -c "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raytracer.dir/kdtree.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/kdtree.cc.o -c /Users/yeneroezsoy/CLionProjects/raytracer/kdtree.cc
 
 CMakeFiles/raytracer.dir/kdtree.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/kdtree.cc.i"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.cc" > CMakeFiles/raytracer.dir/kdtree.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yeneroezsoy/CLionProjects/raytracer/kdtree.cc > CMakeFiles/raytracer.dir/kdtree.cc.i
 
 CMakeFiles/raytracer.dir/kdtree.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/kdtree.cc.s"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.cc" -o CMakeFiles/raytracer.dir/kdtree.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yeneroezsoy/CLionProjects/raytracer/kdtree.cc -o CMakeFiles/raytracer.dir/kdtree.cc.s
 
 CMakeFiles/raytracer.dir/statistics.cc.o: CMakeFiles/raytracer.dir/flags.make
 CMakeFiles/raytracer.dir/statistics.cc.o: ../statistics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raytracer.dir/statistics.cc.o"
-	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/statistics.cc.o -c "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raytracer.dir/statistics.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/statistics.cc.o -c /Users/yeneroezsoy/CLionProjects/raytracer/statistics.cc
 
 CMakeFiles/raytracer.dir/statistics.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/statistics.cc.i"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.cc" > CMakeFiles/raytracer.dir/statistics.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yeneroezsoy/CLionProjects/raytracer/statistics.cc > CMakeFiles/raytracer.dir/statistics.cc.i
 
 CMakeFiles/raytracer.dir/statistics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/statistics.cc.s"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.cc" -o CMakeFiles/raytracer.dir/statistics.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yeneroezsoy/CLionProjects/raytracer/statistics.cc -o CMakeFiles/raytracer.dir/statistics.cc.s
 
 CMakeFiles/raytracer.dir/main.cc.o: CMakeFiles/raytracer.dir/flags.make
 CMakeFiles/raytracer.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raytracer.dir/main.cc.o"
-	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/main.cc.o -c "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/main.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raytracer.dir/main.cc.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raytracer.dir/main.cc.o -c /Users/yeneroezsoy/CLionProjects/raytracer/main.cc
 
 CMakeFiles/raytracer.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/main.cc.i"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/main.cc" > CMakeFiles/raytracer.dir/main.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yeneroezsoy/CLionProjects/raytracer/main.cc > CMakeFiles/raytracer.dir/main.cc.i
 
 CMakeFiles/raytracer.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/main.cc.s"
-	/usr/local/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/main.cc" -o CMakeFiles/raytracer.dir/main.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yeneroezsoy/CLionProjects/raytracer/main.cc -o CMakeFiles/raytracer.dir/main.cc.s
 
 # Object files for target raytracer
 raytracer_OBJECTS = \
@@ -130,7 +130,7 @@ raytracer: CMakeFiles/raytracer.dir/statistics.cc.o
 raytracer: CMakeFiles/raytracer.dir/main.cc.o
 raytracer: CMakeFiles/raytracer.dir/build.make
 raytracer: CMakeFiles/raytracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable raytracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable raytracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raytracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/raytracer.dir/clean:
 .PHONY : CMakeFiles/raytracer.dir/clean
 
 CMakeFiles/raytracer.dir/depend:
-	cd "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug" "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/CMakeFiles/raytracer.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yeneroezsoy/CLionProjects/raytracer /Users/yeneroezsoy/CLionProjects/raytracer /Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug /Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug /Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/CMakeFiles/raytracer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/raytracer.dir/depend
 

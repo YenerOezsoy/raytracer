@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer
+# Install script for directory: /Users/yeneroezsoy/CLionProjects/raytracer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

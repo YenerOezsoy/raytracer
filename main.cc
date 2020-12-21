@@ -24,6 +24,29 @@ void measure_sqrt_time(void) {
     time.stop_clock();
     std::cout << time.time_clock().count() << " [ns] result: " << root << std::endl;
     time.reset_clock();
+
+    std::cout << "sqrt2 (Newton method for sequence of 4 floats)" << std::endl;
+    float values[4] = {4,9,16,250000};
+    float *value_p = values;
+    float roots[4];
+    float *root_p = roots;
+    time.start_clock();
+    sqrt2<LOOPS>(value_p, root_p);
+    time.stop_clock();
+    std::cout << time.time_clock().count() << " [ns] result: " << root_p[0] << ", " << root_p[1] << ", " << root_p[2] << ", " << root_p[3] <<std::endl;
+    time.reset_clock();
+
+    std::cout << "sqrt3 (Newton method for sequence of 4 floats, SIMD)" << std::endl;
+    float values_simd[4] = {4,9,16,250000};
+    float *value_p_simd = values_simd;
+    float roots_simd[4];
+    float *root_p_simd = roots_simd;
+    time.start_clock();
+    sqrt3<LOOPS>(value_p_simd, root_p_simd);
+    time.stop_clock();
+    std::cout << time.time_clock().count() << " [ns] result: " << root_p[0] << ", " << root_p[1] << ", " << root_p[2] << ", " << root_p[3] <<std::endl;
+    time.reset_clock();
+
 }
 
 int main(int argc, char *argv[]) {

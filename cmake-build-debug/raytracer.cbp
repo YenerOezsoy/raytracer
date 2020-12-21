@@ -8,112 +8,116 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"/>
+				<Option working_dir="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"/>
+				<Option working_dir="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"/>
+				<Option working_dir="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="raytracer">
-				<Option output="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/raytracer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"/>
+				<Option output="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/raytracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/."/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0/x86_64-apple-darwin20"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/include"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/include-fixed"/>
+					<Add directory="/Users/yeneroezsoy/CLionProjects/raytracer/."/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0/x86_64-apple-darwin19"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 raytracer"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 raytracer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="raytracer/fast">
-				<Option output="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug/raytracer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/cmake-build-debug"/>
+				<Option output="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/raytracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/."/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0/x86_64-apple-darwin20"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/../../../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/include"/>
-					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0/include-fixed"/>
+					<Add directory="/Users/yeneroezsoy/CLionProjects/raytracer/."/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0/x86_64-apple-darwin19"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/../../../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/10.2.0/lib/gcc/10/gcc/x86_64-apple-darwin19/10.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 raytracer/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung\ von\ Programmen/Dateien/src/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 raytracer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yeneroezsoy/CLionProjects/raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.cc">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/kdtree.cc">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/kdtree.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/main.cc">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/main.cc">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/math.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.tcc">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/math.tcc">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/measure_time.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/measure_time.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/sqrt_opt.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/sqrt_opt.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.cc">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/statistics.cc">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/statistics.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.h">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/triangle.h">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.tcc">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/triangle.tcc">
 			<Option target="raytracer"/>
 		</Unit>
-		<Unit filename="/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/CMakeLists.txt">
+		<Unit filename="/Users/yeneroezsoy/CLionProjects/raytracer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

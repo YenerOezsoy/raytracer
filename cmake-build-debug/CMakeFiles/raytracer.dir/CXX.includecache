@@ -20,69 +20,19 @@ math.tcc
 
 ../math.tcc
 
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.cc
-kdtree.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.h
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/kdtree.h
-math.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.h
-triangle.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.h
-statistics.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.h
-vector
--
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/main.cc
+/Users/yeneroezsoy/CLionProjects/raytracer/main.cc
 iostream
 -
 math.h
 -
 sqrt_opt.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/sqrt_opt.h
+/Users/yeneroezsoy/CLionProjects/raytracer/sqrt_opt.h
 measure_time.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/measure_time.h
+/Users/yeneroezsoy/CLionProjects/raytracer/measure_time.h
 
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.h
-cstddef
--
-initializer_list
--
-cmath
--
-iostream
--
-math.tcc
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.tcc
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.tcc
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/measure_time.h
+/Users/yeneroezsoy/CLionProjects/raytracer/measure_time.h
 chrono
 -
 
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/sqrt_opt.h
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.cc
-statistics.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.h
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/statistics.h
-math.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.h
-chrono
--
-iostream
--
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.h
-math.h
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/math.h
-iostream
--
-triangle.tcc
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.tcc
-
-/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/raytracer/triangle.tcc
+/Users/yeneroezsoy/CLionProjects/raytracer/sqrt_opt.h
 
