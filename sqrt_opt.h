@@ -30,7 +30,7 @@ float sqrt1(float * a) {
 
 template <size_t LOOPS = 2>
 void sqrt2(float * __restrict__ a, float * __restrict__ root) {
-  // from here
+    // from here
     float *ap = a;
     float *rp = root;
 
@@ -49,24 +49,30 @@ void sqrt2(float * __restrict__ a, float * __restrict__ root) {
         *(root+3) = 0.5 * (*(root+3) + (*(a+3) / *(root+3)));
     }
 
-  // to here
+    // to here
 }
 
 
 template <size_t LOOPS = 2>
 void v4sf_sqrt(v4sf *  __restrict__  a, v4sf *  __restrict__  root) {
-  // from here
-  // TODO: your code
-  // to here
+    // from here
+    v4si *ai = reinterpret_cast<v4si *>(a);
+    v4si *initial = reinterpret_cast<v4si *>(root);
+
+    *initial= (1<<29)+(*ai>>1)-(1<<22)-0x4C000;
+
+    for (int i = 0; i < LOOPS; i++) {
+        *root = 0.5 * (*root + (*a / *root));
+    }
+    // to here
 }
 
 
 // wrapper für v4sf_sqrt
 template <size_t LOOPS = 2>
 void sqrt3(float *  __restrict__  a, float *  __restrict__  root) {
-  v4sf *as =  reinterpret_cast<v4sf *>(a);
-  v4sf_sqrt<LOOPS>(as, reinterpret_cast<v4sf *>(root) );
+    v4sf *as =  reinterpret_cast<v4sf *>(a);
+    v4sf_sqrt<LOOPS>(as, reinterpret_cast<v4sf *>(root) );
 }
 
 #endif
-
