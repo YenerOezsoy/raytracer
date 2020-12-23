@@ -7,8 +7,26 @@ BoundingBox::BoundingBox(Vector<FLOAT,3> min, Vector<FLOAT,3> max)
 
 void BoundingBox::split(BoundingBox & left, BoundingBox & right) {
   // from here
-  // TODO: your code
-  // to here
+    float length_x = max[0] - min[0];
+    float length_y = max[1] - min[1];
+
+    Vector<FLOAT,3> min_left = min;
+    Vector<FLOAT,3> max_left;
+    Vector<FLOAT,3> min_right;
+    Vector<FLOAT,3> max_right = max;
+
+    if (length_x >= length_y) {
+        max_left = {length_x / 2, min[1], min[2]}
+        min_right = {length_x / 2, max[1], max[2]};
+    } else {
+        max_left = {min[0], length_y / 2, min[2]}
+        min_right = {max[0], length_y / 2, max[2]};
+    }
+
+    BoundingBox left = BoundingBox(min_left, max_left);
+    BoundingBox right = BoundingBox(min_right, max_right);
+
+    // to here
 }
 
 bool BoundingBox::contains(Vector<FLOAT, 3> v) {
