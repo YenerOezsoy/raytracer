@@ -31,11 +31,9 @@ float sqrt1(float * a) {
 template <size_t LOOPS = 2>
 void sqrt2(float * __restrict__ a, float * __restrict__ root) {
     // from here
-    float *ap = a;
-    float *rp = root;
 
-    int *ai = reinterpret_cast<int *>(ap);
-    int *initial = reinterpret_cast<int *>(rp);
+    int *ai = reinterpret_cast<int *>(a);
+    int *initial = reinterpret_cast<int *>(root);
 
     *initial= (1<<29)+(*ai>>1)-(1<<22)-0x4C000;
     *(initial+1)= (1<<29)+(*(ai+1)>>1)-(1<<22)-0x4C000;
