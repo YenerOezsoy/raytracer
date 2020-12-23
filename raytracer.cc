@@ -19,7 +19,7 @@
 
 static int resolution_x = 256;
 static int resolution_y = 256;
-static std::string input_file_name = "examples/teapot.obj";
+static std::string input_file_name = "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/Aufgaben/Aufgabe 3/Losung/raytracer/examples/teapot.obj";
 static std::string output_bmp_file_name = "output.bmp";
 static bool reverse_vertice_order = false; // switch to counter clockwise orientation of the input file
 static bool write_ppm_to_stdout = true;
@@ -437,11 +437,7 @@ void raytrace(Camera &camera, Scene & scene, Screen & screen, KDTree *tree = nul
       const Ray<FLOAT> ray = camera.getRay(x,y);
       Triangle<FLOAT> *nearest_triangle = nullptr;
       FLOAT t = INFINITY, u = 0, v = 0;
-#ifndef USE_KDTREE
-      bool hasNearestTriangle = scene.hasNearestTriangle(ray, nearest_triangle, t, u, v);
-#else
       bool hasNearestTriangle = tree->hasNearestTriangle(ray.getOrigin(), ray.getDirection(),  nearest_triangle, t, u, v);
-#endif
       if ( hasNearestTriangle ) {
         // no reflection and refraction
         color = scene.shade(ray, *nearest_triangle, material, t, u, v);
@@ -518,12 +514,8 @@ int main(int argc, char *argv[]) {
                  screen );
 
   stats.time_start();
-#ifndef USE_KDTREE
-  raytrace(camera, scene, screen);
-#else
   std::unique_ptr<KDTree> tree =  std::unique_ptr<KDTree>( KDTree::buildTree( triangles ) );
   raytrace(camera, scene, screen, tree.get());
-#endif
   stats.time_stop();
   if (write_ppm_to_stdout) {
     std::cout << screen; // write image in PPM format to the standard output
