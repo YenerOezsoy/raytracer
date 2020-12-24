@@ -20,7 +20,7 @@
 static int resolution_x = 256;
 static int resolution_y = 256;
 static std::string input_file_name = "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/Aufgaben/Aufgabe 3/Losung/raytracer/examples/teapot.obj";
-static std::string output_bmp_file_name = "output.bmp";
+static std::string output_bmp_file_name = "/Volumes/Extern/Studium/HS/MA/WS2020_21/Optimierung von Programmen/Dateien/src/Aufgaben/Aufgabe 3/Losung/raytracer/output.bmp";
 static bool reverse_vertice_order = false; // switch to counter clockwise orientation of the input file
 static bool write_ppm_to_stdout = true;
 

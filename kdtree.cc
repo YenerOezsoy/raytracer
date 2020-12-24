@@ -34,15 +34,14 @@ void BoundingBox::split(BoundingBox & left, BoundingBox & right) {
 
     left = BoundingBox(min_left, max_left);
     right = BoundingBox(min_right, max_right);
-
     // to here
 }
 
 bool BoundingBox::contains(Vector<FLOAT, 3> v) {
   // from here
-  return v[0] >= min[0] && v[0] <= max[0] &&
-          v[1] >= min[1] && v[1] <= max[1] &&
-          v[2] >= min[2] && v[2] <= max[2];
+  return (v[0] >= min[0] && v[0] <= max[0]) ||
+          (v[1] >= min[1] && v[1] <= max[1]) ||
+          (v[2] >= min[2] && v[2] <= max[2]);
   // to here
 }
 
@@ -79,32 +78,32 @@ KDTree::~KDTree() {
 KDTree * KDTree::buildTree(KDTree * tree, std::vector< Triangle<FLOAT> *> & triangles) {
   // from here
   if (triangles.size() > MAX_TRIANGLES_PER_LEAF) {
-      tree->left = new KDTree();
-      tree->right = new KDTree();
+      this->left = new KDTree();
+      this->right = new KDTree();
 
-      tree->box.split(tree->left->box, tree->right->box);
+      this->box.split(this->left->box, this->right->box);
 
       std::vector<Triangle<FLOAT> *> triangles_left = std::vector<Triangle<FLOAT>*> ();
       std::vector<Triangle<FLOAT> *> triangles_right = std::vector<Triangle<FLOAT>*> ();
 
-      for (auto it = triangles.begin(); it != triangles.end(); it++) {
-          if (tree->left->box.contains(*it) && tree->right->box.contains(*it)) {
-              tree->triangles.push_back(*it);
-          } else if (tree->left->box.contains(*it)) {
-              triangles_left.push_back(*it);
-          } else if (tree->right->box.contains(*it)) {
-              triangles_right.push_back(*it);
+      for (Triangle<FLOAT> * triangle : triangles) {
+          if (this->left->box.contains(triangle) && this->right->box.contains(triangle)) {
+              this->triangles.push_back(triangle);
+          } else if (this->left->box.contains(triangle)) {
+              triangles_left.push_back(triangle);
+          } else {
+              triangles_right.push_back(triangle);
           }
       }
 
-      tree->left->buildTree(tree->left, triangles_left);
-      tree->right->buildTree(tree->right, triangles_right);
+      this->left->buildTree(nullptr, triangles_left);
+      this->right->buildTree(nullptr, triangles_right);
 
   } else {
-      tree->triangles = triangles;
+      this->triangles = triangles;
   }
   // to here
-  return tree;
+  return this;
 }
 
 KDTree * KDTree::buildTree(std::vector< Triangle<FLOAT> *> & triangles)  {
@@ -134,7 +133,7 @@ KDTree * KDTree::buildTree(std::vector< Triangle<FLOAT> *> & triangles)  {
       }
   }
   root->box = *(new BoundingBox(min, max));
-  root->buildTree(root,triangles);
+  root->buildTree(nullptr,triangles);
   // to here
   return root;
 }
@@ -142,12 +141,12 @@ KDTree * KDTree::buildTree(std::vector< Triangle<FLOAT> *> & triangles)  {
 bool KDTree::hasNearestTriangle(Vector<FLOAT,3> eye, Vector<FLOAT,3> direction, Triangle<FLOAT> *  & nearest_triangle, FLOAT &t, FLOAT &u, FLOAT &v, FLOAT minimum_t) {
   // from here
   if (this->box.intersects(eye, direction)) {
-      if (this->left && this->left->box.intersects(eye,direction)) {
+      if (this->left) {
           this->left->hasNearestTriangle(eye, direction, nearest_triangle, t, u, v, minimum_t);
-      } else if (this->right && this->right->box.intersects(eye,direction)) {
+      }
+      if (this->right) {
           this->right->hasNearestTriangle(eye, direction, nearest_triangle, t, u, v, minimum_t);
       }
-      minimum_t = INFINITY;
       for (Triangle<FLOAT> * triangle : this->triangles) {
           stats.no_ray_triangle_intersection_tests++;
           if (triangle->intersects(eye,direction,t,u,v,minimum_t)) {
@@ -156,6 +155,7 @@ bool KDTree::hasNearestTriangle(Vector<FLOAT,3> eye, Vector<FLOAT,3> direction, 
               nearest_triangle = triangle;
           }
       }
+      t = minimum_t;
   }
 
   // to here
