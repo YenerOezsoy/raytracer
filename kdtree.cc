@@ -99,9 +99,9 @@ KDTree * KDTree::buildTree(KDTree * tree, std::vector< Triangle<FLOAT> *> & tria
       this->left->buildTree(nullptr, triangles_left);
       this->right->buildTree(nullptr, triangles_right);
 
-  } else {
-      this->triangles = triangles;
+      return this;
   }
+  this->triangles = triangles;
   // to here
   return this;
 }
