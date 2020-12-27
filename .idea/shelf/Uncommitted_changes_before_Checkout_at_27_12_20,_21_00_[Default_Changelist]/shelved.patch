@@ -1,0 +1,84 @@
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 0dd5123e3bc98e6c3c32a8c988527463f5b6f5a1)
++++ /dev/null	(revision 0dd5123e3bc98e6c3c32a8c988527463f5b6f5a1)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/raytracer.iml" filepath="$PROJECT_DIR$/.idea/raytracer.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CMakeRunConfigurationManager\" shouldGenerate=\"true\" shouldDeleteObsolete=\"true\">\n    <generated>\n      <config projectName=\"raytracer\" targetName=\"raytracer\" />\n    </generated>\n  </component>\n  <component name=\"CMakeSettings\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" CONFIG_NAME=\"Debug\" ENABLED=\"true\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"027e4c2e-5686-4255-84d1-2cfb25d57d04\" name=\"Default Changelist\" comment=\"fixed every error. final state of task 3\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/kdtree.cc\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/kdtree.cc\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"CMakeBuildProfile:Debug\" />\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"aufgabe3\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1lttVMKzHK1JqZVAzeEJdSMtw2l\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"cf.first.check.clang-format\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\" />\n  </component>\n  <component name=\"RunManager\" selected=\"CMake Application.raytracer\">\n    <configuration default=\"true\" type=\"CLionExternalRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"CLION.EXTERNAL.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"raytracer\" type=\"CMakeGoogleTestRunConfigurationType\" factoryName=\"Google Test\" REDIRECT_INPUT=\"false\" ELEVATE=\"true\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"raytracer\" TARGET_NAME=\"raytracer\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"raytracer\" RUN_TARGET_NAME=\"raytracer\" TEST_MODE=\"PATTERN\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n        <option name=\"BeforeTestRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"raytracer\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"raytracer\" TARGET_NAME=\"raytracer\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"raytracer\" RUN_TARGET_NAME=\"raytracer\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"CMake Application.raytracer\" />\n      <item itemvalue=\"Google Test.raytracer\" />\n    </list>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"027e4c2e-5686-4255-84d1-2cfb25d57d04\" name=\"Default Changelist\" comment=\"\" />\n      <created>1608428237603</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1608428237603</updated>\n      <workItem from=\"1608428238873\" duration=\"547000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"started implementing\">\n      <created>1608733630198</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1608733630198</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"implemented task 3 in test environment\">\n      <created>1608740439113</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1608740439113</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"fixed some errors\">\n      <created>1608759482219</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1608759482219</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"intermediate state\">\n      <created>1608816933119</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1608816933120</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"fixed every error. final state of task 3\">\n      <created>1608823564901</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1608823564901</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"refactored code\" />\n    <MESSAGE value=\"started implementing\" />\n    <MESSAGE value=\"implemented task 3 in test environment\" />\n    <MESSAGE value=\"fixed some errors\" />\n    <MESSAGE value=\"intermediate state\" />\n    <MESSAGE value=\"fixed every error. final state of task 3\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"fixed every error. final state of task 3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0dd5123e3bc98e6c3c32a8c988527463f5b6f5a1)
++++ b/.idea/workspace.xml	(date 1609099191187)
+@@ -13,7 +13,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="027e4c2e-5686-4255-84d1-2cfb25d57d04" name="Default Changelist" comment="fixed every error. final state of task 3">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/kdtree.cc" beforeDir="false" afterPath="$PROJECT_DIR$/kdtree.cc" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -48,11 +47,6 @@
+     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+   </component>
+   <component name="RunManager" selected="CMake Application.raytracer">
+-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+-      <method v="2">
+-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+-      </method>
+-    </configuration>
+     <configuration name="raytracer" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="raytracer" TARGET_NAME="raytracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="raytracer" RUN_TARGET_NAME="raytracer" TEST_MODE="PATTERN">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+@@ -119,7 +113,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1608823564901</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="fixed every error. final state of task 3">
++      <created>1608829933107</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1608829933107</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: .idea/raytracer.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"CPP_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/raytracer.iml b/.idea/raytracer.iml
+--- a/.idea/raytracer.iml	(revision 0dd5123e3bc98e6c3c32a8c988527463f5b6f5a1)
++++ b/.idea/raytracer.iml	(date 1609099191090)
+@@ -1,8 +1,2 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module type="CPP_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
++<module type="CPP_MODULE" version="4" />
+\ No newline at end of file

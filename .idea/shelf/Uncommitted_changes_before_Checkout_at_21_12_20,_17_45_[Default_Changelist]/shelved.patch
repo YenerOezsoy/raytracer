@@ -1,0 +1,170 @@
+Index: sqrt_opt.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#ifndef SQRT_OPT_H\n#define SQRT_OPT_H\n\ntypedef float v4sf __attribute__ ((vector_size (16)));\ntypedef int v4si __attribute__ ((vector_size (16)));\n\n\ntemplate <size_t LOOPS = 2>\nfloat sqrt1(float * a) {\n    float root;\n    // from here\n    root = 1;\n    float *ap = a;\n    float *rp = &root;\n\n    int *ai = reinterpret_cast<int *>(ap);\n    int *initial = reinterpret_cast<int *>(rp);\n    *initial= (1<<29)+(*ai>>1)-(1<<22)-0x4C000;\n\n    float *x0 = reinterpret_cast<float *>(initial);\n\n    root = *x0;\n\n    for (int i = 0; i < LOOPS; i++) {\n        root = 0.5 * (root + (*a / root));\n    }\n\n    // to here\n    return root;\n}\n\ntemplate <size_t LOOPS = 2>\nvoid sqrt2(float * __restrict__ a, float * __restrict__ root) {\n  // from here\n  // TODO: your code\n  // to here\n}\n\n\ntemplate <size_t LOOPS = 2>\nvoid v4sf_sqrt(v4sf *  __restrict__  a, v4sf *  __restrict__  root) {\n  // from here\n  // TODO: your code\n  // to here\n}\n\n\n// wrapper für v4sf_sqrt\ntemplate <size_t LOOPS = 2>\nvoid sqrt3(float *  __restrict__  a, float *  __restrict__  root) {\n  v4sf *as =  reinterpret_cast<v4sf *>(a);\n  v4sf_sqrt<LOOPS>(as, reinterpret_cast<v4sf *>(root) );\n}\n\n#endif\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sqrt_opt.h b/sqrt_opt.h
+--- a/sqrt_opt.h	(revision 963a37f71064863a1dbf373a76e292fef9756091)
++++ b/sqrt_opt.h	(date 1608569100280)
+@@ -9,7 +9,6 @@
+ float sqrt1(float * a) {
+     float root;
+     // from here
+-    root = 1;
+     float *ap = a;
+     float *rp = &root;
+ 
+@@ -32,7 +31,24 @@
+ template <size_t LOOPS = 2>
+ void sqrt2(float * __restrict__ a, float * __restrict__ root) {
+   // from here
+-  // TODO: your code
++    float *ap = a;
++    float *rp = root;
++
++    int *ai = reinterpret_cast<int *>(ap);
++    int *initial = reinterpret_cast<int *>(rp);
++
++    *initial= (1<<29)+(*ai>>1)-(1<<22)-0x4C000;
++    *(initial+1)= (1<<29)+(*(ai+1)>>1)-(1<<22)-0x4C000;
++    *(initial+2)= (1<<29)+(*(ai+2)>>1)-(1<<22)-0x4C000;
++    *(initial+3)= (1<<29)+(*(ai+3)>>1)-(1<<22)-0x4C000;
++
++    for (int i = 0; i < LOOPS; i++) {
++        *root = 0.5 * (*root + (*a / *root));
++        *(root+1) = 0.5 * (*(root+1) + (*(a+1) / *(root+1)));
++        *(root+2) = 0.5 * (*(root+2) + (*(a+2) / *(root+2)));
++        *(root+3) = 0.5 * (*(root+3) + (*(a+3) / *(root+3)));
++    }
++
+   // to here
+ }
+ 
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 963a37f71064863a1dbf373a76e292fef9756091)
++++ /dev/null	(revision 963a37f71064863a1dbf373a76e292fef9756091)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/raytracer.iml" filepath="$PROJECT_DIR$/.idea/raytracer.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CMakeSettings\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" CONFIG_NAME=\"Debug\" ENABLED=\"true\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"027e4c2e-5686-4255-84d1-2cfb25d57d04\" name=\"Default Changelist\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1lttVMKzHK1JqZVAzeEJdSMtw2l\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"cf.first.check.clang-format\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"GradleAppRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"027e4c2e-5686-4255-84d1-2cfb25d57d04\" name=\"Default Changelist\" comment=\"\" />\n      <created>1608428237603</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1608428237603</updated>\n      <workItem from=\"1608428238873\" duration=\"430000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 963a37f71064863a1dbf373a76e292fef9756091)
++++ b/.idea/workspace.xml	(date 1608568283450)
+@@ -1,12 +1,22 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
++    <generated>
++      <config projectName="raytracer" targetName="raytracer" />
++    </generated>
++  </component>
+   <component name="CMakeSettings">
+     <configurations>
+       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+     </configurations>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="027e4c2e-5686-4255-84d1-2cfb25d57d04" name="Default Changelist" comment="" />
++    <list default="true" id="027e4c2e-5686-4255-84d1-2cfb25d57d04" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/raytracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/raytracer.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/sqrt_opt.h" beforeDir="false" afterPath="$PROJECT_DIR$/sqrt_opt.h" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -15,7 +25,13 @@
+   <component name="ClangdSettings">
+     <option name="formatViaClangd" value="false" />
+   </component>
++  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="aufgabe1" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="1lttVMKzHK1JqZVAzeEJdSMtw2l" />
+@@ -33,9 +49,20 @@
+     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+   </component>
+   <component name="RunManager">
+-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
++    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
++      <method v="2">
++        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="raytracer" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="raytracer" TARGET_NAME="raytracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="raytracer" RUN_TARGET_NAME="raytracer" TEST_MODE="SUITE_TEST">
++      <method v="2">
++        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
++        <option name="BeforeTestRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+       <method v="2">
+-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
++        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+       </method>
+     </configuration>
+   </component>
+@@ -54,4 +81,15 @@
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/raytracer.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"CPP_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/raytracer.iml b/.idea/raytracer.iml
+--- a/.idea/raytracer.iml	(revision 963a37f71064863a1dbf373a76e292fef9756091)
++++ b/.idea/raytracer.iml	(date 1608567876136)
+@@ -1,8 +1,2 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module type="CPP_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
++<module type="CPP_MODULE" version="4" />
+\ No newline at end of file
